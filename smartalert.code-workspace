@@ -1,0 +1,23 @@
+{
+  "folders": [
+    {
+      "name": "Smart Alert",
+      "path": "."
+    },
+    {
+      "name": "Smart Alert Docs",
+      "path": "C:/Users/creato/OneDrive/SmartAlert"
+    }
+  ],
+  "settings": {
+    "files.exclude": {
+      "**/.git": true,
+      "**/.venv": true,
+      "**/__pycache__": true,
+      "**/node_modules": true
+    },
+    "python.defaultInterpreterPath": "${workspaceFolder}/.venv",
+    "git.autofetch": true,
+    "explorer.excludeGitIgnore": false
+  }
+}

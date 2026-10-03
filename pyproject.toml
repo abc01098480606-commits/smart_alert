@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=75"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "smartalert"
+version = "0.1.0"
+description = "Smart Alert backend"
+requires-python = ">=3.14"
+dependencies = [
+    "alembic>=1.20",
+    "fastapi>=0.141",
+    "httpx>=0.28",
+    "pydantic-settings>=2.15",
+    "sqlalchemy>=2.0",
+    "uvicorn[standard]>=0.53",
+]
+
+[project.optional-dependencies]
+dev = [
+    "black>=26.5",
+    "pytest>=9.1",
+    "ruff>=0.16",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+
+[tool.ruff]
+line-length = 100
+src = ["src", "tests"]
+
+[tool.black]
+line-length = 100
